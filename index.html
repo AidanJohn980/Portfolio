@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#f7f6f2">
+	<meta name="description" content="Aidan John is an independent designer and front-end developer creating thoughtful digital experiences.">
+	<title>Aidan John — Designer &amp; Developer</title>
+	<style>
+		:root{--paper:#f7f6f2;--ink:#20211f;--muted:#70716c;--line:#deded7;--lime:#c9f06c;--serif:Georgia,'Times New Roman',serif;--sans:Inter,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif}
+		*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}a:focus-visible{outline:2px solid var(--ink);outline-offset:5px}.wrap{width:min(1120px,calc(100% - 64px));margin:auto}
+		header{height:88px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:11px;font-size:15px;font-weight:650;letter-spacing:-.03em}.mark{width:28px;height:28px;display:grid;place-items:center;border-radius:50%;background:var(--ink);color:var(--paper);font:italic 16px var(--serif)}nav{display:flex;align-items:center;gap:32px;color:#555650;font-size:13px}nav a:hover,.under:hover{color:#778f3d}.nav-cta{padding:11px 16px;border:1px solid var(--line);border-radius:99px;color:var(--ink);transition:.2s}.nav-cta:hover{background:var(--lime);border-color:var(--lime)}
+		.hero{min-height:600px;display:grid;grid-template-columns:1.14fr .86fr;align-items:center;gap:65px;padding:80px 0 92px}.eyebrow,.label{color:var(--muted);font-size:11px;font-weight:650;letter-spacing:.14em;text-transform:uppercase}.eyebrow{display:flex;align-items:center;gap:10px}.dot{width:8px;height:8px;border-radius:50%;background:#78a34d;box-shadow:0 0 0 4px #78a34d1c}h1{max-width:660px;margin:26px 0 22px;font-size:clamp(54px,7.5vw,92px);line-height:.99;letter-spacing:-.075em;font-weight:570}h1 em{font-family:var(--serif);font-weight:400;letter-spacing:-.065em}.intro{max-width:475px;color:var(--muted);font-size:16px;line-height:1.8}.actions{display:flex;align-items:center;gap:24px;margin-top:34px;font-size:13px;font-weight:600}.button{display:inline-flex;align-items:center;justify-content:center;gap:13px;padding:15px 20px;border-radius:99px;background:var(--ink);color:white;transition:transform .2s,background .2s}.button:hover{transform:translateY(-2px);background:#44463f}.under{display:inline-flex;gap:8px;align-items:center;transition:color .2s}
+		.visual{position:relative;min-height:410px;display:grid;place-items:center}.art{position:relative;width:min(100%,390px);aspect-ratio:.91;overflow:hidden;border-radius:48% 48% 8px 8px;background:#d9e5cb}.art:before{content:'';position:absolute;width:72%;aspect-ratio:1;left:14%;top:15%;border-radius:50%;background:#efc889}.sun{position:absolute;z-index:1;width:21%;aspect-ratio:1;right:13%;top:17%;border-radius:50%;background:#f7e7ba}.portrait{position:absolute;z-index:2;width:40%;height:65%;left:31%;bottom:-2%;border-radius:48% 48% 8% 8%;background:#313832}.portrait:before{content:'';position:absolute;width:53%;height:28%;left:23%;top:-14%;border-radius:48%;background:#bd805c}.portrait:after{content:'';position:absolute;width:62%;height:24%;left:19%;top:-18%;border-radius:50% 50% 20% 20%;background:#38312e}.art:after{content:'';position:absolute;width:105%;height:55%;left:-3%;bottom:-8%;border-radius:50% 50% 0 0;background:#879b71;transform:rotate(-8deg)}.note{position:absolute;z-index:3;right:-14px;bottom:45px;padding:13px 16px;border:1px solid #ffffffa8;border-radius:8px;background:#f7f6f2e8;font:italic 13px var(--serif);transform:rotate(-4deg)}.spark{position:absolute;left:-19px;top:56px;color:#7e8f67;font:33px var(--serif);transform:rotate(-14deg)}
+		.section{padding:88px 0;border-top:1px solid var(--line)}.heading{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:38px}.label{margin:0 0 13px}h2{margin:0;font-size:clamp(34px,4.5vw,52px);font-weight:540;letter-spacing:-.06em;line-height:1.08}.section-intro{max-width:390px;margin:0;color:var(--muted);font-size:14px;line-height:1.75}.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}.project{min-width:0}.project-art{height:300px;overflow:hidden;display:grid;place-items:center;border-radius:8px;transition:transform .25s}.project:hover .project-art{transform:translateY(-4px)}.one{background:#e7ded1}.two{background:#d9e2df}.window{width:72%;height:72%;padding:14px;border-radius:9px;background:#fbfaf7;box-shadow:0 20px 50px #27231a24;transform:rotate(-3deg)}.chrome{height:13px;display:flex;gap:4px;align-items:center;border-bottom:1px solid #e9e7e1}.chrome i{width:4px;height:4px;border-radius:50%;background:#d4d1c9}.mock{height:calc(100% - 13px);padding:13px 7px;display:grid;grid-template-columns:1fr .8fr;gap:10px;align-items:center}.mock b{display:block;width:86%;height:10px;margin-bottom:7px;border-radius:3px;background:#3c5147}.mock b:nth-child(2){width:66%;background:#9da99c}.mock small{display:block;width:75%;height:4px;margin-top:10px;background:#e2e1db}.mock-image{height:78%;border-radius:50% 50% 6px 6px;background:linear-gradient(155deg,#e8bb84 0 48%,#91a28c 49%)}.phone{width:36%;height:82%;padding:8px;border:5px solid #252e2e;border-radius:22px;background:#f8f6ef;box-shadow:0 20px 50px #26343124;transform:rotate(5deg)}.phone-image{height:54%;margin-top:10px;border-radius:13px;background:linear-gradient(150deg,#ebcda1 0 47%,#c49370 48% 61%,#8caa9d 62%)}.line{height:6px;width:72%;margin:11px 5px 0;border-radius:8px;background:#b8c8be}.line.short{width:46%;margin-top:6px;background:#e1e2dc}.project-meta{display:flex;justify-content:space-between;gap:15px;padding-top:17px}.project h3{margin:0 0 5px;font-size:17px;font-weight:600;letter-spacing:-.03em}.project p,.year{margin:0;color:var(--muted);font-size:12px}.about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:100px}.about-copy{max-width:580px;color:var(--muted);font-size:15px;line-height:1.85}.about-copy p{margin:0 0 17px}.skills{display:flex;flex-wrap:wrap;gap:9px;margin-top:24px}.skills span{padding:9px 13px;border:1px solid var(--line);border-radius:99px;color:#53544e;font-size:11px}.contact{display:flex;justify-content:space-between;align-items:center;gap:40px;padding:56px 60px;border-radius:10px;background:var(--lime)}.contact .label{color:#4e5d36}.contact h2{max-width:600px;font-size:clamp(36px,5vw,60px)}.contact .button{flex-shrink:0}footer{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:28px 0;color:var(--muted);font-size:11px}.socials{display:flex;gap:20px}
+		@media(max-width:760px){.wrap{width:min(calc(100% - 40px),560px)}header{height:72px}nav{gap:17px;font-size:12px}nav a:nth-child(2){display:none}.nav-cta{padding:9px 12px}.hero{grid-template-columns:1fr;gap:30px;padding:72px 0 62px}.intro{font-size:15px}.visual{min-height:340px}.art{width:min(78%,320px)}.section{padding:68px 0}.heading{display:block}.section-intro{margin-top:16px}.project-art{height:235px}.about-grid{grid-template-columns:1fr;gap:24px}.contact{align-items:flex-start;flex-direction:column;padding:36px 28px}}
+		@media(max-width:480px){.wrap{width:calc(100% - 36px)}.brand{font-size:13px}nav{gap:12px}nav a:first-child{display:none}h1{font-size:clamp(52px,15vw,70px)}.actions{gap:18px}.projects{grid-template-columns:1fr;gap:28px}.project-art{height:260px}footer{align-items:flex-start;flex-direction:column}}
+		@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition-duration:.01ms!important}}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<header>
+			<a class="brand" href="#home" aria-label="Aidan John, home"><span class="mark">a</span> Aidan John</a>
+			<nav aria-label="Main navigation"><a href="#work">Work</a><a href="#about">About</a><a href="#about">Notes</a><a class="nav-cta" href="#contact">Let's talk <span aria-hidden="true">↗</span></a></nav>
+		</header>
+		<main>
+			<section class="hero" id="home">
+				<div>
+					<div class="eyebrow"><span class="dot" aria-hidden="true"></span> Independent designer &amp; developer</div>
+					<h1>Making the web feel a little more <em>human.</em></h1>
+					<p class="intro">I’m Alex, a designer and front-end developer partnering with good people to make thoughtful, useful digital things.</p>
+					<div class="actions"><a class="button" href="#work">Explore my work <span aria-hidden="true">↓</span></a><a class="under" href="mailto:hello@alexmorgan.design">Get in touch <span aria-hidden="true">↗</span></a></div>
+				</div>
+				<div class="visual" role="img" aria-label="Abstract portrait illustration"><span class="spark" aria-hidden="true">✳</span><div class="art"><span class="sun"></span><span class="portrait"></span></div><span class="note">A little bit of everything.</span></div>
+			</section>
+			<section class="section" id="work">
+				<div class="heading"><div><p class="label">Selected work · 2022—24</p><h2>Made with care.</h2></div><p class="section-intro">A few projects where strategy, design, and a little curiosity came together.</p></div>
+				<div class="projects">
+					<a class="project" href="mailto:hello@alexmorgan.design?subject=Fieldnotes" aria-label="Fieldnotes — brand identity and digital experience">
+						<div class="project-art one" aria-hidden="true"><div class="window"><div class="chrome"><i></i><i></i><i></i></div><div class="mock"><div><b></b><b></b><small></small><small></small></div><div class="mock-image"></div></div></div></div>
+						<div class="project-meta"><div><h3>Fieldnotes</h3><p>Brand identity · Digital experience</p></div><span class="year">2024 ↗</span></div>
+					</a>
+					<a class="project" href="mailto:hello@alexmorgan.design?subject=Common%20Ground" aria-label="Common Ground — product design and mobile app">
+						<div class="project-art two" aria-hidden="true"><div class="phone"><div class="phone-image"></div><div class="line"></div><div class="line short"></div><div class="line"></div></div></div>
+						<div class="project-meta"><div><h3>Common Ground</h3><p>Product design · Mobile app</p></div><span class="year">2023 ↗</span></div>
+					</a>
+				</div>
+			</section>
+			<section class="section" id="about">
+				<div class="about-grid"><div><p class="label">A little about me</p><h2>Curious by nature.<br>Thoughtful by design.</h2></div><div class="about-copy"><p>I’m an independent creative working at the intersection of design and technology. I like clear ideas, warm details, and making complicated things feel simple.</p><p>From the first sketch to the final line of code, I bring a collaborative mindset and a genuine care for the people on the other side of the screen.</p><div class="skills" aria-label="Areas of expertise"><span>Digital design</span><span>Creative development</span><span>Art direction</span><span>Prototyping</span><span>Design systems</span></div></div></div>
+			</section>
+			<section class="contact" id="contact"><div><p class="label">Have a good one in mind?</p><h2>Let’s make something meaningful.</h2></div><a class="button" href="mailto:hello@alexmorgan.design">Say hello <span aria-hidden="true">↗</span></a></section>
+		</main>
+		<footer><span>© 2024 Aidan John. Made with intention.</span><div class="socials"><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram ↗</a></div></footer>
+	</div>
+</body>
+</html>
